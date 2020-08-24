@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size: 62.5%;
+    color: #4f4f4f;
+    border: 1px solid red;
+}
+
+body{
+}
+
+/* tablet */
+@media(max-width:800px){
+
+}
+
+/* smartphone */
+@media(max-width:500px){
+
+}
