@@ -4,7 +4,7 @@
     margin: 0;
     max-width: 100%;
     font-size: 62.5%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
@@ -175,6 +175,10 @@ footer{
     width: 20%;
 }
 
+.social a:hover {
+    border-radius: 50%;
+}
+
 .learn_more{
     background-color: #2e4756;
 
@@ -216,6 +220,7 @@ footer{
 .team img{
     border-radius: 50%;
     width: 30%;
+    margin: 2% 0;
 }
 
 /* tablet */
@@ -276,7 +281,7 @@ footer{
     }
 
     .about{
-        width: 80%
+        width: 80%;
         display: flex;
         flex-wrap: column;
         justify-content: space-evenly;
