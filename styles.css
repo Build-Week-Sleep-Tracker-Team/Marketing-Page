@@ -74,13 +74,14 @@ a{
 }
 
 a:hover{
-    color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .logo{
     width: 10%;
-    margin: 3%;
+    margin: 1%;
     background-image: url('imaage/sleep.svg');
+    margin-left: 8%;
 }
 
 .sect1{
@@ -145,10 +146,18 @@ a:hover{
     width: 70%;
 }
 
-button{
-    width: 30%;
-    padding: 1.5%;
-    margin: 3%
+.app_button{
+    background-color: #9fa2b2;
+    width: 25%;
+    margin:2%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+    border: 3px solid #3b3b38;
+    border-radius: 10px;
+}
+.app_button:hover{
+    background-color: whitesmoke;
 }
 
 footer{
@@ -168,15 +177,17 @@ footer{
 }
 
 .learn_more{
-    background-color: #16262e;
+    background-color: #2e4756;
+
     color: whitesmoke;
     padding: 3%
 }
 
 .team_descript{
     padding: 0 10%;
-    background-color: #2e4756;
     color: whitesmoke;
+    background-color: #16262e;
+
 }
 
 .about{
@@ -184,7 +195,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #2e4756;
+    background-color: #16262e;
     color: whitesmoke;   
     padding: 2% 0; 
 }
@@ -232,6 +243,11 @@ footer{
         align-items: center;
         margin: 1%;
     }
+
+    .links a{
+        width: 75%;
+    }
+
     .sect1{
         display: flex;
         flex-direction: column;
@@ -255,5 +271,28 @@ footer{
     }
     footer{
         padding: 3% 10%;
+    }
+
+    .about{
+        display: flex;
+        flex-wrap: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #2e4756;
+        color: whitesmoke;   
+        padding: 2% 0; 
+    }
+
+    .about p{
+        width: 75%;
+    }
+    .team{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+        margin: 2%;
+        padding: 1%;
     }
 }
