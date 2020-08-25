@@ -274,12 +274,12 @@ footer{
     }
 
     .about{
+        width: 80%
         display: flex;
         flex-wrap: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #2e4756;
-        color: whitesmoke;   
+          
         padding: 2% 0; 
     }
 
@@ -287,12 +287,17 @@ footer{
         width: 75%;
     }
     .team{
-        width: 60%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-     
-        margin: 2%;
-        padding: 1%;
+    }
+
+    .team p{
+        width: 80%;
+    }
+
+    .app_button{
+        width: 75%;
     }
 }
