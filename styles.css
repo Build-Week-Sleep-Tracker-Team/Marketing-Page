@@ -41,8 +41,6 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-
 }
 
 .links{
@@ -83,6 +81,7 @@ a:hover{
     margin-left: 8%;
 }
 
+/*this is section 1 "intro" id = #tired*/
 .sect1{
     background-color: #2e4756;
     color: whitesmoke;
@@ -100,7 +99,7 @@ a:hover{
     flex-direction: column;
     justify-content: center;
 }
-
+/* this is section 2 "icons & points" id = #sleep*/
 .sect2{
     background-color: #16262e;
     color: whitesmoke;
@@ -120,6 +119,10 @@ a:hover{
     border: none;
 }
 
+.sect2 h2{
+    line-height: 2;
+}
+
 .sect2 p{
     margin: 0 15%;
 }
@@ -131,6 +134,8 @@ a:hover{
 
 .point{
     width: 75%;
+    padding-bottom: 3%;
+    border-block-end: 1px solid whitesmoke;
 }
 .sect3{
     background-color: #2e4756;
@@ -151,9 +156,10 @@ a:hover{
     margin:2%;
     font-size: 2rem;
     text-align: center;
-    line-height: 2;
+    line-height: normal;
     border: 3px solid #3b3b38;
     border-radius: 10px;
+    padding: 1%;
 }
 .app_button:hover{
     background-color: whitesmoke;
@@ -197,7 +203,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #16262e;
     color: whitesmoke;   
     padding: 2% 0; 
@@ -223,11 +229,32 @@ footer{
     margin: 2% 0;
 }
 
+/* 1208 width */
+@media(max-width:1224px){
+    .links a{
+        font-size: 1.8rem;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+}
+
 /* tablet */
 @media(max-width:800px){
     .sect3{
         padding: 1% 9%;
-    }   
+    }  
+    .links a{
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .callAction{
+        width: 45%;
+    }
 }
 
 /* smartphone */
@@ -280,8 +307,12 @@ footer{
         padding: 3% 10%;
     }
 
+    .learn_more h1{
+        font-size: 4.5rem;
+    }
+
     .about{
-        width: 80%;
+      
         display: flex;
         flex-wrap: column;
         justify-content: space-evenly;
@@ -306,5 +337,8 @@ footer{
 
     .app_button{
         width: 75%;
+    }
+    .callAction{
+        width: 70%;
     }
 }
