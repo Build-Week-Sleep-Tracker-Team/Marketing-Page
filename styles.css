@@ -106,7 +106,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1% 20%
+    padding: 1% 10%
 }
 
 .filter_white{
@@ -291,10 +291,17 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1% 5%;
+        padding: 1% 0;
+    }
+    .sect2 .icon{
+        margin-top: 5%;
+    }
+    
+    .sect2 p{
+        margin: 2% 10%;
     }
     .point{
-        width: 90%;
+        width: 100%;
     }
     .social{
         width: 50%;
