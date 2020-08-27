@@ -62,9 +62,6 @@ header nav{
     line-height: 2;
     border: 3px solid #3b3b38;
     border-radius: 10px;
-}
-
-a{
     text-decoration: none;
     color: black;
     font-size: 1.8rem;
@@ -72,6 +69,8 @@ a{
 
 a:hover{
     background-color: whitesmoke;
+    color: #3b3b38;
+    border-radius: 10px;
 }
 
 .logo{
@@ -105,7 +104,8 @@ a:hover{
     color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    align-items: top;
     padding: 1% 10%
 }
 
@@ -121,10 +121,11 @@ a:hover{
 
 .sect2 h2{
     line-height: 2;
+    margin-top: 5%;
 }
 
 .sect2 p{
-    margin: 0 15%;
+    margin: 5% 15%;
 }
 
 .icon{
@@ -161,6 +162,13 @@ a:hover{
     border-radius: 10px;
     padding: 1%;
 }
+
+.app_button a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
 .app_button:hover{
     background-color: whitesmoke;
 }
@@ -215,12 +223,13 @@ footer{
     flex-direction: column;
     align-items: center;
  
-    margin: 2%;
+    margin: 2% 2% 4% 2%;
     padding: 1%;
 }
 
 .team h2{
     line-height: normal;
+    font-size: 2.5rem;
 }
 
 .team img{
@@ -229,8 +238,18 @@ footer{
     margin: 2% 0;
 }
 
+.team a{
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 1%;
+    }
+
+.team a:hover{
+    color: #3b3b38;
+}
+
 /* 1208 width */
-@media(max-width:1224px){
+@media(max-width:1024px){
     .links a{
         font-size: 1.8rem;
         line-height: normal;
@@ -238,6 +257,9 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 1%;
+    }
+    .sect2{
+        align-items: center;
     }
 }
 
@@ -284,8 +306,12 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+   .first_img{
+       margin-top: 3%;
+   }
     .title{
         width: 75%;
+        margin-bottom: 3%;
     }
     .sect2{
         display: flex;
